@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 
-import { CitySercice } from "../services/city.service";
+import { CitySercice } from "../../services/geo.service";
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState("");
