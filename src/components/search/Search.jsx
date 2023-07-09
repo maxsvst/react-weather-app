@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { AsyncPaginate } from "react-select-async-paginate";
 
-import { CitySercice } from "../../services/geo.service";
+import { GeoService } from "../../services/geo.service";
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState("");
 
   const loadOptions = async (inputValue) => {
     try {
-      const data = await CitySercice.getCity(inputValue);
+      const data = await GeoService.getCity(inputValue);
       return data;
     } catch (error) {
       console.error(error);

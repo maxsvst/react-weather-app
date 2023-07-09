@@ -1,5 +1,5 @@
 .weather {
-    width: 320px;
+    width: 350px;
     border-radius: 10px;
     box-shadow: 15px -2px 20px 2px rgb(0 0 0 / 30%);
     color: #fff;
@@ -15,9 +15,15 @@
     align-items: center;
 }
 
+.middle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .city {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 25px;
     line-height: 1;
     margin: 0;
     letter-spacing: 1px;
@@ -25,7 +31,7 @@
 
 .weather_description {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1;
     margin: 0;
 }
